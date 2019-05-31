@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>StarWiki</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><!--bootstrap CDN-->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"><!--fontawesome icons-->
+
+	<link rel="stylesheet" type='text/css' href="starwiki.css">
+	
+</head>
+<body>
+	<div class="main container-fluid">
+		<div class="top">
+			<h1>Star-Wiki</h1>
+			<h3>Lorem ipsum dolor.</h3>
+			<img src="img/deathstar.jpg">
+		</div><!--top-->
+
+		<div class="searchbars">
+
+			<div class="people">
+				<p class="label">People</p>
+				<input type="text">
+				<button id='get-people' class='search  btn btn-primary'>Search</button>
+			</div>
+
+			<div class="species">
+				<p class="label">Species</p>
+				<input type="text">
+				<button id='get-species' class='search btn btn-primary'>Search</button>
+			</div>
+
+			<div class="starships">
+				<p class="label">Starships</p>
+				<input type="text">
+				<button id='get-ships' class='search btn btn-primary'>Search</button>
+			</div>
+
+			<div class="planets">
+				<p class="label">Planets</p>
+				<input type="text">
+				<button id='get-planets' class='search btn btn-primary'>Search</button>
+			</div>
+		</div><!--searchbars-->
+
+	<div class="output">
+		<h4 id='person-name' class='output-name'></h4>
+		<p id='person-height' class="height"></p>
+		<p id='person-weight' class="mass"></p>
+		<p id='person-born' class="birth-year"></p>
+	</div>
+
+	</div><!--main-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+	<script type='text/javascript' src='starwiki.js'></script>
+</body>
+</html>

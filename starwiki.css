@@ -1,0 +1,45 @@
+.main {
+	width: 100%;
+
+}
+
+.top {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+
+}
+.searchbars {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.output {
+	width: 80%;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+}
+
+.height::before {
+	content:'Height: ';
+}
+
+.mass::before {
+	content:'Weight: ';
+}
+
+.birth-year::before {
+	content:'Born: ';
+}
+
+.homeworld::before {
+	content:'Homeworld: ';
+}
+
+.starships-owned::before {
+	content:'Ships: ';
+}
